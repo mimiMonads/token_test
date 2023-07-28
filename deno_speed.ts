@@ -174,7 +174,24 @@ while (i++ !== 100_000) {
 console.log("Sign_8_4 => " + genericVerifier(sign_8(token_8)))
 console.log("Sign_16_4 => " + genericVerifier(sign_16(token_16)))
 console.log("Sign_24_4 => " + genericVerifier(sign_24(token_24)))
+console.log("Sign_32_4 => " + genericVerifier(sign_32(token_32)))
 console.log("Sign_40_4 => " + genericVerifier(sign_40(token_40)))
 
-
 console.log("Sign_8_1 => " + genericVerifier_1(sign_8_1(token_8)))
+console.log("Sign_16_1 => " + genericVerifier_1(sign_16_1(token_16)))
+console.log("Sign_24_1 => " + genericVerifier_1(sign_24_1(token_24)))
+console.log("Sign_32_1 => " + genericVerifier_1(sign_32_1(token_32)))
+console.log("Sign_40_1 => " + genericVerifier_1(sign_40_1(token_40)))
+
+
+console.log("Verify_8_4 => " + verify_8(genericSigner_4(token_8)));
+console.log("Verify_16_4 => " + verify_16(genericSigner_4(token_16)));
+console.log("Verify_24_4 => " + verify_24(genericSigner_4(token_24)));
+console.log("Verify_32_4 => " + verify_32(genericSigner_4(token_32)));
+console.log("Verify_40_4 => " + verify_40(genericSigner_4(token_40)));
+
+console.log("Verify_8_1 => " + verify_8_1(genericSigner_1(token_8)));
+console.log("Verify_16_1 => " + verify_16_1(genericSigner_1(token_16)));
+console.log("Verify_24_1 => " + verify_24_1(genericSigner_1(token_24)));
+console.log("Verify_32_1 => " + verify_32_1(genericSigner_1(token_32)));
+console.log("Verify_40_1 => " + verify_40_1(genericSigner_1(token_40)));

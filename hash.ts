@@ -25,9 +25,6 @@ let arr = new Uint8Array(8).fill(0);
 
 function incrementArray(arr) {
   for (let i = arr.length - 1; i >= 0; i--) {
-    arr[i]++;
-    // If the current cell is not 0, break the loop
-    // If it is 0, it means it was 255 and has overflowed, so continue to the next cell
     if (arr[i] !== 0) {
       break;
     }
